@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <link rel="shortcut icon" href="images/atm-card.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub-div">
+            <div class="back">
+                <span class="cvc-num">000</span>
+            </div>
+            <div class="front">
+                <img src="images/card-logo.svg" alt="">
+                <br>
+                <p>0000 0000 0000 0000</p>
+                <span class="card-name">LOREM IPSUM</span>
+                <span class="yy" style="float: right;">00</span><span style="float: right;">/</span><span class="mm" style="float: right;">00</span>
+            </div>
+            <div class="bg">
+                <!-- background -->
+            </div>
+            <div class="payment-form">
+                <form action="">
+                    <label for="usrname">CARDHOLDER NAME<span style="display: none;">: Invalid.</span></label><br>
+                    <input type="text" name="usrname" id="usrname" value="" placeholder="eg: Lorem Ipsum" minlength="3" maxlength="25" oninput="enterDetails('usrname')"><br>
+                    <label for="card">CARD NUMBER<span style="display: none;">: Invalid.</span></label><br>
+                    <input type="text" name="card" id="card" value="" placeholder="eg: 1234567891234567" maxlength="16" oninput="enterDetails('card')"><br>
+                    <label for="expdate">EXP. DATE(MM/YY)<span style="display: none;">: required.</span></label>
+                    <span for="cvc">CVC<span style="display: none;">: Invalid.</span></span><br>
+                    <input type="number" name="mm" id="expdateA"value="" placeholder="MM"  oninput="enterDetails('expdateA')">
+                    <input type="number" name="yy" id="expdateB"value="" placeholder="YY" oninput="enterDetails('expdateB')">
+                    <input type="password" name="cvc" id="cvc" value="" placeholder="eg: 123" maxlength="3" oninput="enterDetails('cvc')">
+                    <button type="button" onclick="validateInfo()">Confirm</button>
+                </form>
+                <div class="loader"">
+                    <img src="images/Rolling-1s-200px.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="ty">
+                    <img src="images/icon-complete.svg" alt="">
+                    <h1>THANK YOU!</h1>
+                    <p>We've added your card details</p>
+                    <button type="button" style="text-align: center; width: 100%;" onclick="reset()">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

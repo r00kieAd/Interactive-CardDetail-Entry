@@ -1,0 +1,292 @@
+body {
+    /* background-color: #F1F0E8; */
+    background-image: url('images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px hsl(278, 68%, 11%);
+    width: 65rem;
+    height: 40rem;
+    background-color: white;
+}
+
+.sub-div {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.front {
+    position: absolute;
+    z-index: 1;
+    background-image: url('images/bg-card-front.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: hsl(270, 3%, 87%);
+    border-radius: 5px;
+    width: 20rem;
+    height: 10rem;
+    padding: 16px;
+    top: 18%;
+    left: 14%;
+}
+
+.front span {
+    position: relative;
+    top: 25%;
+}
+
+.back {
+    position: absolute;
+    z-index: 1;
+    background-image: url('images/bg-card-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 20rem;
+    height: 10rem;
+    padding: 16px;
+    top: 52%;
+    left: 20%;
+}
+
+.back span {
+    position: relative;
+    top: 44%;
+    left: 84%;
+}
+
+.bg {
+    position: relative;
+    background-image: url('images/bg-main-desktop.png');
+    background-size: cover;
+    background-position: inherit;
+    width: inherit;
+    height: inherit;
+    flex-basis: 38%;
+}
+
+.payment-form {
+    position: relative;
+    height: fit-content;
+    top: 31%;
+    left: 25%;
+}
+
+form {
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.loader {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.loader img {
+    width: 100px;
+    height: auto;
+}
+
+label,
+input {
+    margin: 8px 0;
+}
+
+label {
+    font-size: 14px;
+    color: hsl(278, 68%, 11%);
+}
+
+input {
+    padding: 8px;
+    width: 94%;
+    outline: none;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+#expdateA, #expdateB,
+#cvc {
+    width: 20%;
+}
+
+span[for="cvc"] {
+    margin-top: 2px;
+    margin-right: 17%;
+    float: right;
+    font-size: 14px;
+}
+
+#cvc {
+    float: right;
+}
+
+button {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #DDE6ED;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+}
+
+.ty {
+    display: none;
+    position: relative;
+    text-align: center;
+    width: 120%;
+    justify-content: center;
+    top: 30%;
+    left: 110%;
+}
+
+/* on hover css properties */
+input:hover {
+    border-color: hsl(278, 94%, 30%);
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    color: hsl(278, 68%, 11%);
+    background-color: hsl(270, 3%, 87%);
+    border-color: hsl(278, 68%, 11%);
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        background-image: none;
+    }
+
+    .main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+        border: none;
+        box-shadow: none;
+        width: 100vw;
+        height: 100vh;
+        margin: none;
+    }
+
+    .sub-div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .payment-form {
+        display: block;
+        position: relative;
+        top: 20vh;
+        left: 10px;
+        width: 92vw;
+        /* border: 1px solid black; */
+    }
+
+    .bg {
+        flex-basis: 45vw;
+    }
+
+    .front {
+        width: 15rem;
+        height: 8rem;
+        top: 16vh;
+        left: 4vw;
+    }
+
+    .front span {
+        position: relative;
+        top: 10%;
+    }
+
+    .back {
+        width: 15rem;
+        height: 8rem;
+        top: 4vh;
+        left: 20vw;
+    }
+
+    .back span {
+        position: relative;
+        top: 43%;
+        left: 85%;
+    }
+
+    form {
+        display: block;
+        position: relative;
+        width: 100%;
+        /* border: 1px solid black; */
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .loader {
+        display: none;
+        top: 16vh;
+        left: 47vw;
+        
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #expdateA, #expdateB,
+    #cvc {
+        width: 20%;
+    }
+
+    span[for="cvc"] {
+        margin-top: 2px;
+        margin-right: 12%;
+    }
+
+    #cvc {
+        float: right;
+    }
+    
+    .ty {
+        display: none;
+        margin-top: 20vh;
+        left: 15vw;
+        width: 70%;
+        justify-content: center;
+    }
+
+}
