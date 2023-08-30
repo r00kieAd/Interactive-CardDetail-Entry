@@ -30,13 +30,13 @@
 
 ## :dart: About ##
 
-<a href="https://r00kiead.github.io/Interactive-CardDetail-Entry/">Interactive Card</a>
+<a href="https://r00kiead.github.io/Interactive-CardDetail-Entry/">Interactive Card</a> is website that demonstrates the validation, entry and interactive behaviour of credit/debit card details. Users will be able to enter valid card details (mock) in input form which will be validated and entered in a card UI at the time of editing and submiting the details. Has a unique way of displaying errors on invalid details. Instead of regular error display which usually is displayed at the bottom of input box, it will be shown on the input label if the detail is invalid or incomplete making it more precise. In this project, a separate loader animation is also used that appears on successfull validation and submition of card which after shows a thank you page. Users will also be able to see the live card UI whose details change as user enter the details in input box.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Responsive;\
+:heavy_check_mark: Input validation;\
+:heavy_check_mark: Interactive card UI;
 
 ## :rocket: Technologies ##
 
@@ -49,10 +49,9 @@ The following tools were used in this project:
 
 ## :memo: License ##
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file. Design provided by Frontend Mentor.
 
-
-Made with :heart: by <a href="https://github.com/r00kieAd" target="_blank">Adhyatma Dwivedi</a>
+Modified and developed by <a href="https://github.com/r00kieAd" target="_blank">Adhyatma Dwivedi</a>
 
 &#xa0;
 
